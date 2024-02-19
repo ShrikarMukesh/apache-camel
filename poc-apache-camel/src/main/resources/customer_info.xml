@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer_data>
+    <message_header>
+        <timestamp>2024-02-12T10:30:00</timestamp>
+        <source_system>BankingSystem</source_system>
+        <message_id>123456789</message_id>
+        <!-- Add more fields for the message header as needed -->
+    </message_header>
+    <customer_info>
+        <id>123456</id>
+        <name>John Doe</name>
+        <gender>Male</gender>
+        <age>35</age>
+        <date_of_birth>1989-06-15</date_of_birth>
+        <ssn>123-45-6789</ssn>
+        <nationality>US</nationality>
+        <address>
+            <street>123 Main Street</street>
+            <city>New York</city>
+            <state>NY</state>
+            <zipcode>10001</zipcode>
+            <country>United States</country>
+            <residency_status>Resident</residency_status>
+        </address>
+        <contact>
+            <phone>123-456-7890</phone>
+            <email>john.doe@example.com</email>
+            <alternate_email>john.doe@gmail.com</alternate_email>
+            <emergency_contact>
+                <name>Jane Doe</name>
+                <relationship>Spouse</relationship>
+                <phone>987-654-3210</phone>
+            </emergency_contact>
+        </contact>
+        <accounts>
+            <account>
+                <type>Savings</type>
+                <balance>5000.00</balance>
+                <currency>USD</currency>
+                <transactions>
+                    <transaction>
+                        <date>2024-02-11</date>
+                        <amount>200.00</amount>
+                        <description>Deposit</description>
+                    </transaction>
+                    <!-- Add more transaction elements as needed -->
+                </transactions>
+            </account>
+            <account>
+                <type>Checking</type>
+                <balance>2500.00</balance>
+                <currency>USD</currency>
+                <transactions>
+                    <!-- Transaction details for checking account -->
+                </transactions>
+            </account>
+        </accounts>
+        <!-- Add more fields for customer info as needed -->
+        <employment>
+            <status>Employed</status>
+            <employer>ABC Corporation</employer>
+            <position>Software Engineer</position>
+            <start_date>2010-05-01</start_date>
+        </employment>
+    </customer_info>
+</customer_data>
