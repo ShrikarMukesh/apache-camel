@@ -1,0 +1,81 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Define the root template matching the root node -->
+    <xsl:template match="/">
+        <!-- Start building the new XML structure -->
+        <persons>
+            <!-- Apply the transformation for each 'person' element -->
+            <xsl:apply-templates select="persons/person"/>
+        </persons>
+    </xsl:template>
+
+    <!-- Define the template for 'person' element -->
+    <xsl:template match="person">
+        <!-- Transform 'person' element into 'individual' in the new structure -->
+        <individual>
+            <!-- Extract and transform 'name' element -->
+            <name>
+                <xsl:value-of select="name"/>
+            </name>
+            <!-- Extract and transform 'age' element -->
+            <age>
+                <xsl:value-of select="age"/>
+            </age>
+            <!-- Transform 'address' element -->
+            <address>
+                <street>
+                    <xsl:value-of select="address/street"/>
+                </street>
+                <city>
+                    <xsl:value-of select="address/city"/>
+                </city>
+                <state>
+                    <xsl:value-of select="address/state"/>
+                </state>
+                <zipCode>
+                    <xsl:value-of select="address/zipCode"/>
+                </zipCode>
+                <country>
+                    <xsl:value-of select="address/country"/>
+                </country>
+            </address>
+            <!-- Transform 'contactDetails' element -->
+            <contactDetails>
+                <phoneNumber>
+                    <xsl:value-of select="contactDetails/phoneNumber"/>
+                </phoneNumber>
+                <email>
+                    <xsl:value-of select="contactDetails/email"/>
+                </email>
+                <emergencyContact>
+                    <xsl:value-of select="contactDetails/emergencyContact"/>
+                </emergencyContact>
+            </contactDetails>
+            <!-- Transform 'education' element -->
+            <education>
+                <degree>
+                    <xsl:value-of select="education/degree"/>
+                </degree>
+                <institution>
+                    <xsl:value-of select="education/institution"/>
+                </institution>
+                <graduationYear>
+                    <xsl:value-of select="education/graduationYear"/>
+                </graduationYear>
+            </education>
+            <!-- Transform 'job' element -->
+            <job>
+                <companyName>
+                    <xsl:value-of select="job/companyName"/>
+                </companyName>
+                <position>
+                    <xsl:value-of select="job/position"/>
+                </position>
+                <salary>
+                    <xsl:value-of select="job/salary"/>
+                </salary>
+            </job>
+        </individual>
+    </xsl:template>
+
+</xsl:stylesheet>

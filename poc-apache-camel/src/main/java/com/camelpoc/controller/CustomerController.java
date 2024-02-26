@@ -29,8 +29,8 @@ class CustomerController {
     public String transformXmlAndStore() {
         try {
             // Load XML and XSL files
-            ClassPathResource xmlResource = new ClassPathResource("customer_info.xml");
-            ClassPathResource xslResource = new ClassPathResource("transform.xsl");
+            ClassPathResource xmlResource = new ClassPathResource("customer/customer_info.xml");
+            ClassPathResource xslResource = new ClassPathResource("customer/transform.xsl");
 
             // Parse XML file
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
