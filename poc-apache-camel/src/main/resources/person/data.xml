@@ -1,0 +1,29 @@
+<persons>
+    <person>
+        <name>John Doe</name>
+        <age>30</age>
+        <address>
+            <street>123 Main St</street>
+            <city>Anytown</city>
+            <state>CA</state>
+            <zipCode>12345</zipCode>
+            <country>USA</country>
+        </address>
+        <contactDetails>
+            <phoneNumber>123-456-7890</phoneNumber>
+            <email>john@example.com</email>
+            <emergencyContact>Jane Doe (123-456-7891)</emergencyContact>
+        </contactDetails>
+        <education>
+            <degree>Bachelor's</degree>
+            <institution>University of XYZ</institution>
+            <graduationYear>2015</graduationYear>
+        </education>
+        <job>
+            <companyName>ABC Corporation</companyName>
+            <position>Software Engineer</position>
+            <salary>100000</salary>
+        </job>
+    </person>
+    <!-- Add more person elements as needed -->
+</persons>
