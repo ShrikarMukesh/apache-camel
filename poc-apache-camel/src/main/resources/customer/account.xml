@@ -1,0 +1,24 @@
+<bankAccount>
+    <accountNumber>123456789</accountNumber>
+    <balance>5000.00</balance>
+    <cards>
+        <card>
+            <cardNumber>1111 2222 3333 4444</cardNumber>
+            <cardType>Credit</cardType>
+        </card>
+        <card>
+            <cardNumber>5555 6666 7777 8888</cardNumber>
+            <cardType>Debit</cardType>
+        </card>
+    </cards>
+    <linkedParties>
+        <linkedParty>
+            <name>John Doe</name>
+            <relationship>Spouse</relationship>
+        </linkedParty>
+        <linkedParty>
+            <name>Jane Doe</name>
+            <relationship>Child</relationship>
+        </linkedParty>
+    </linkedParties>
+</bankAccount>
