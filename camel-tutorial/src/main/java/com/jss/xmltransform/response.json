@@ -1,0 +1,49 @@
+{
+  "Customer": {
+    "CustomerID": "123456789",
+    "FirstName": "John",
+    "LastName": "Doe",
+    "Address": {
+      "Street": "123 Main Street",
+      "City": "New York",
+      "State": "NY",
+      "PostalCode": "10001",
+      "Country": "USA"
+    },
+    "ContactInfo": {
+      "Email": "john.doe@example.com",
+      "Phone": {
+        "Mobile": "123-456-7890",
+        "Home": "987-654-3210"
+      }
+    },
+    "Accounts": {
+      "Account": {
+        "AccountID": "1001",
+        "AccountType": "Savings",
+        "Balance": "5000.00",
+        "Currency": "USD",
+        "Branch": "Main Branch",
+        "LinkedCards": {
+          "Card": [
+
+            {
+              "CardNumber": "1234 5678 9012 3456",
+              "CardType": "Visa",
+              "ExpirationDate": "12/25",
+              "SecurityCode": "123"
+            }
+          ,
+            {
+              "CardNumber": "",
+              "CardType": "",
+              "ExpirationDate": "",
+              "SecurityCode": ""
+            }
+
+          ]
+        }
+      }
+    }
+  }
+}

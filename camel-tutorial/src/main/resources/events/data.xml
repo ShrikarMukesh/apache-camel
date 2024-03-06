@@ -1,0 +1,39 @@
+<Customer>
+    <CustomerID>123456789</CustomerID>
+    <FirstName>John</FirstName>
+    <LastName>Doe</LastName>
+    <Address>
+        <Street>123 Main Street</Street>
+        <City>New York</City>
+        <State>NY</State>
+        <PostalCode>10001</PostalCode>
+        <Country>USA</Country>
+    </Address>
+    <ContactInfo>
+        <Email>john.doe@example.com</Email>
+        <Phone>
+            <Mobile>123-456-7890</Mobile>
+            <Home>987-654-3210</Home>
+        </Phone>
+    </ContactInfo>
+    <Accounts>
+        <Account>
+            <AccountID>1001</AccountID>
+            <AccountType>Savings</AccountType>
+            <Balance>5000.00</Balance>
+            <Currency>USD</Currency>
+            <Branch>Main Branch</Branch>
+            <LinkedCards>
+                <Card>
+                    <CardNumber>1234 5678 9012 3456</CardNumber>
+                    <CardType>Visa</CardType>
+                    <ExpirationDate>12/25</ExpirationDate>
+                    <SecurityCode>123</SecurityCode>
+                </Card>
+                <Card>
+
+                </Card>
+            </LinkedCards>
+        </Account>
+    </Accounts>
+</Customer>
