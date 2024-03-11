@@ -1,4 +1,4 @@
-package com.jss.xmltransform;
+package com.camel.xmltransform;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
@@ -11,7 +11,6 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import java.io.StringReader;
 import java.io.StringWriter;
 
 @Service

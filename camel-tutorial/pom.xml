@@ -52,9 +52,30 @@
       </dependency>
 
       <dependency>
+         <groupId>org.json</groupId>
+         <artifactId>json</artifactId>
+         <version>20210307</version> <!-- Adjust version based on your preference -->
+      </dependency>
+
+
+      <dependency>
          <groupId>org.apache.camel</groupId>
          <artifactId>camel-jackson</artifactId>
          <version>${camel.version}</version>
+      </dependency>
+
+      <!-- Apache Camel Spring Boot Starter -->
+      <dependency>
+         <groupId>org.apache.camel.springboot</groupId>
+         <artifactId>camel-spring-boot-starter</artifactId>
+         <version>3.7.4</version>
+      </dependency>
+
+      <!-- Apache Camel Kafka Starter -->
+      <dependency>
+         <groupId>org.apache.camel.springboot</groupId>
+         <artifactId>camel-kafka-starter</artifactId>
+         <version>3.7.4</version>
       </dependency>
 
       <dependency>

@@ -1,12 +1,16 @@
-package com.jss.routes;
+package com.camel.routes;
 
 import org.apache.camel.builder.RouteBuilder;
+import org.springframework.stereotype.Component;
 
-public class KafkaRoute extends RouteBuilder {
-    @Override
-    public void configure() throws Exception {
-
-    }
+//@Component
+//public class KafkaConsumerRoute extends RouteBuilder {
+//
+//    @Override
+//    public void configure() throws Exception {
+//        from("kafka:test-topic?brokers=localhost:9092")
+//                .log("Received message: ${body}");
+//    }
 //
 //    @Override
 //    public void configure() throws Exception {
@@ -24,4 +28,4 @@ public class KafkaRoute extends RouteBuilder {
 //                .otherwise()
 //                .to("kafka://product?brokers=kafka:9092");
 //    }
-}
+//}
